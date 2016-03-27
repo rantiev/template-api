@@ -1,0 +1,36 @@
+{
+  "name": "ra-projects",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^2.9.25",
+    "body-parser": "^1.15.0",
+    "connect-mongo": "^0.8.2",
+    "connect-roles": "^3.1.1",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jade": "*",
+    "lodash": "*",
+    "mongoose": "*",
+    "mongoose-q": "*",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pm2": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "chai-as-promised": "^5.1.0",
+    "karma": "^0.13.9",
+    "karma-chai": "^0.1.0",
+    "karma-chai-as-promised": "^0.1.2",
+    "karma-mocha": "^0.2.0",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-sinon-chai": "^1.0.0",
+    "mocha": "^2.3.0"
+  }
+}
