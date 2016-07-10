@@ -25,39 +25,6 @@ module.exports = {
 			invalidImage: 'Invalid Image',
 			invalidPassword: 'Invalid Password',
 			invalidConfirmPasswod: 'Invalid Confirm Password field'
-		},
-		project: {
-			create: {
-				success: 'Project was created!',
-				failure: 'Project wasn\'t created!'
-			},
-			update: {
-				success: 'Project was updated!',
-				failure: 'Project wasn\'t updated!'
-			},
-			remove: {
-				success: 'Project was removed!',
-				failure: 'Project wasn\'t removed!'
-			},
-			notObtained1: 'Project wasn\'t obtained!',
-			notObtainedN: 'Projects weren\'t obtained!'
-		},
-		ticket: {
-			create: {
-				success: 'Ticket was created!',
-				failure: 'Ticket wasn\'t created!'
-			},
-			update: {
-				success: 'Ticket was updated!',
-				failure: 'Ticket wasn\'t updated!'
-			},
-			remove: {
-				success: 'Ticket was removed!',
-				failure: 'Ticket wasn\'t removed!'
-			},
-			notObtained1: 'Ticket wasn\'t obtained!',
-			notObtainedN: 'Tickets weren\'t obtained!',
-			emptySettings: 'Settings is empty'
 		}
 	}
 };

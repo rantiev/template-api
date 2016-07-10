@@ -15,7 +15,7 @@ module.exports = function (app, express, config, mongoose) {
 	app.use(function (req, res, next) {
 
 		// Website you wish to allow to connect
-		res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
+		res.setHeader('Access-Control-Allow-Origin', 'http://app.com');
 
 		// Request methods you wish to allow
 		res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -31,16 +31,20 @@ module.exports = function (app, express, config, mongoose) {
 		next();
 	});
 
-	/*app.use(function (req, res, next) {
+	app.use(function (req, res, next) {
 		console.log('coockie is:', req.cookies);
-	});*/
+		next();
+	});
 
 	app.use(session({
 		saveUninitialized: false,
 		resave: false,
 		secret: config.sessionsSecretToken,
 		cookie: {
-			secure: false
+			secure: false,
+			domain: '.app.com',
+			path: '/',
+			maxAge: 1000 * 60 * 60 * 24
 		},
 		store: new MongoStore({ mongooseConnection: mongoose.connection })
 	}));
